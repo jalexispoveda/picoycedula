@@ -2,16 +2,18 @@
     <h5 class="card-header">Cédula terminada en {{cedula}}</h5>
     <div class="card-body">
         <div class="alert alert-success" role="alert">
-            <span *ngIf="cedula == '1' || cedula == '2'">Puedes salir el Lunes <i class=" fas fa-check-circle"></i></span>
-            <span *ngIf="cedula == '3' || cedula == '4'">Puedes salir el Martes <i class=" fas fa-check-circle"></i></span>
-            <span *ngIf="cedula == '5' || cedula == '6'">Puedes salir el Miercoles <i class=" fas fa-check-circle"></i></span>
-            <span *ngIf="cedula == '7' || cedula == '8'">Puedes salir el Jueves <i class=" fas fa-check-circle"></i></span>
-            <span *ngIf="cedula == '9' || cedula == '0'">Puedes salir el Viernes <i class=" fas fa-check-circle"></i></span>
+            <span *ngIf="cedula == '1' || cedula == '2'"><i class=" fas fa-check-circle"></i> Puedes salir el <b>Lunes</b></span>
+            <span *ngIf="cedula == '3' || cedula == '4'"><i class=" fas fa-check-circle"></i> Puedes salir el <b>Martes</b></span>
+            <span *ngIf="cedula == '5' || cedula == '6'"><i class=" fas fa-check-circle"></i> Puedes salir el <b>Miercoles</b></span>
+            <span *ngIf="cedula == '7' || cedula == '8'"><i class=" fas fa-check-circle"></i> Puedes salir el <b>Jueves</b></span>
+            <span *ngIf="cedula == '9' || cedula == '0'"><i class=" fas fa-check-circle"></i> Puedes salir el <b>Viernes</b></span>
         </div>
         <div class="alert alert-info " role="alert ">
-            Género habilitado para salir el dia Sabado: {{genero}}
-            <span *ngIf="genero=='Femenino' "><i class="fas fa-female "></i></span>
-            <span *ngIf="genero=='Masculino' "><i class="fas fa-male "></i></span>
+            Género habilitado para salir el dia <b>Sábado</b>:
+            <b> {{genero}} </b>
+            <span *ngIf="genero=='Femenino' "><i class="fas fa-female "></i><i class="fas fa-venus"></i></span>
+            <span *ngIf="genero=='Masculino' "><i class="fas fa-male "></i><i class="fas fa-mars"></i></span>
+
         </div>
         <div class="alert alert-danger " role="alert ">
             Domingo: ¡TODOS EN CASA!
