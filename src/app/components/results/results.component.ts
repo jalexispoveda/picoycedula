@@ -11,10 +11,14 @@ export class ResultsComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+    this.genero = this.getGenre();
+  }
+
+  getGenre(){
     if (this.getNumberOfWeek() % 2 === 0) {
-        this.genero = 'Masculino';
+      return 'Masculino';
     } else {
-        this.genero = 'Femenino';
+      return 'Femenino';
     }
   }
 

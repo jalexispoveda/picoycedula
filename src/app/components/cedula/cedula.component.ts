@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { FormControl, Validators  } from '@angular/forms';
+import { FormBuilder, FormGroup, FormControl, Validators } from '@angular/forms';
+
+const numericRegex = ('[0-9]*');
 
 @Component({
   selector: 'app-cedula',
@@ -7,20 +9,20 @@ import { FormControl, Validators  } from '@angular/forms';
   styleUrls: ['./cedula.component.css']
 })
 export class CedulaComponent implements OnInit {
-  cedula = new FormControl('', [Validators.required, Validators.minLength(2)]);
+  datos:any = {};
+  cedula: string;
 
-  constructor() { }
+  constructor(private formBuilder: FormBuilder) { 
+    this.datos = formBuilder.group({
+      cedula: new FormControl('', [Validators.pattern(numericRegex)])
+    }, {updateOn: 'change'});
+
+    this.datos.get('cedula').valueChanges.subscribe((cedNumber) => {
+          this.cedula = cedNumber;
+  });
+  }
 
   ngOnInit(): void {
-  }
-  
-
-  numberOnly(event): boolean {
-    const charCode = (event.which) ? event.which : event.keyCode;
-    if (charCode > 31 && (charCode < 48 || charCode > 57)) {
-      return false;
-    }
-    return true;
   }
 
 }

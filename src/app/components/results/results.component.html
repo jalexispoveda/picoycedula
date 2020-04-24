@@ -1,34 +1,21 @@
-<div class="card" *ngIf="cedula.length >= 1">
-    <h5 class="card-header">Resultado de la consulta</h5>
+<div class="card" *ngIf="cedula">
+    <h5 class="card-header">Cédula terminada en {{cedula}}</h5>
     <div class="card-body">
-        <div class="alert alert-success" role="alert" *ngIf="cedula == '1' || cedula == '2'">
-            Puedes salir el Lunes
-            <span><i class="fas fa-check-circle"></i></span>
+        <div class="alert alert-success" role="alert">
+            <span *ngIf="cedula == '1' || cedula == '2'">Puedes salir el Lunes <i class=" fas fa-check-circle"></i></span>
+            <span *ngIf="cedula == '3' || cedula == '4'">Puedes salir el Martes <i class=" fas fa-check-circle"></i></span>
+            <span *ngIf="cedula == '5' || cedula == '6'">Puedes salir el Miercoles <i class=" fas fa-check-circle"></i></span>
+            <span *ngIf="cedula == '7' || cedula == '8'">Puedes salir el Jueves <i class=" fas fa-check-circle"></i></span>
+            <span *ngIf="cedula == '9' || cedula == '0'">Puedes salir el Viernes <i class=" fas fa-check-circle"></i></span>
         </div>
-        <div class="alert alert-success" role="alert" *ngIf="cedula == '3' || cedula == '4'">
-            Puedes salir el Martes
-            <span><i class="fas fa-check-circle"></i></span>
+        <div class="alert alert-info " role="alert ">
+            Género habilitado para salir el dia Sabado: {{genero}}
+            <span *ngIf="genero=='Femenino' "><i class="fas fa-female "></i></span>
+            <span *ngIf="genero=='Masculino' "><i class="fas fa-male "></i></span>
         </div>
-        <div class="alert alert-success" role="alert" *ngIf="cedula == '5' || cedula == '6'">
-            Puedes salir el Miercoles
-            <span><i class="fas fa-check-circle"></i></span>
-        </div>
-        <div class="alert alert-success" role="alert" *ngIf="cedula == '7' || cedula == '8'">
-            Puedes salir el Jueves
-            <span><i class="fas fa-check-circle"></i></span>
-        </div>
-        <div class="alert alert-success" role="alert" *ngIf="cedula == '9' || cedula == '0'">
-            Puedes salir el Viernes
-            <span><i class="fas fa-check-circle"></i></span>
-        </div>
-        <div class="alert alert-info" role="alert">
-            Genero habilitado para salir el dia Sabado: {{genero}}
-            <span *ngIf="genero == 'Femenino'"><i class="fas fa-female"></i></span>
-            <span *ngIf="genero == 'Masculino'"><i class="fas fa-male"></i></span>
-        </div>
-        <div class="alert alert-danger" role="alert">
-            Domingo: ¡QUEDATE EN CASA!
-            <span><i class="fas fa-home"></i></span>
+        <div class="alert alert-danger " role="alert ">
+            Domingo: ¡TODOS EN CASA!
+            <span><i class="fas fa-home "></i></span>
         </div>
     </div>
 </div>
