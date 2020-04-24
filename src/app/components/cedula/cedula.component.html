@@ -1,7 +1,7 @@
 <div class="container center_div p-3">
     <div [formGroup]="datos">
         <div class="form-group">
-            <label for="cedula">Ingresa el ultimo dígito de tu cédula:</label>
+            <label for="cedula">Ingresa el último dígito de tu cédula:</label>
             <input type="text" id="cedula" class="form-control" [ngClass]="{'is-invalid': datos.get('cedula').hasError('pattern') }" maxlength="1" formControlName="cedula" required>
             <div class="invalid-feedback" *ngIf="datos.get('cedula').hasError('pattern')">
                 Por favor ingresa un numero
