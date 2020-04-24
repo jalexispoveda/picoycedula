@@ -1,0 +1,42 @@
+[debug] [2020-04-24T04:25:16.473Z] ----------------------------------------------------------------------
+[debug] [2020-04-24T04:25:16.475Z] Command:       D:\Program Files\nodejs\node.exe C:\Users\USUARIO\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2020-04-24T04:25:16.476Z] CLI Version:   8.1.1
+[debug] [2020-04-24T04:25:16.476Z] Platform:      win32
+[debug] [2020-04-24T04:25:16.476Z] Node Version:  v10.16.0
+[debug] [2020-04-24T04:25:16.477Z] Time:          Thu Apr 23 2020 23:25:16 GMT-0500 (GMT-05:00)
+[debug] [2020-04-24T04:25:16.477Z] ----------------------------------------------------------------------
+[debug] [2020-04-24T04:25:16.477Z] 
+[debug] [2020-04-24T04:25:16.486Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-04-24T04:25:16.518Z] Error: Could not load the default credentials. Browse to https://cloud.google.com/docs/authentication/getting-started for more information.
+    at GoogleAuth.getApplicationDefaultAsync (C:\Users\USUARIO\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\google-auth-library\build\src\auth\googleauth.js:160:19)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2020-04-24T04:26:23.689Z] ----------------------------------------------------------------------
+[debug] [2020-04-24T04:26:23.691Z] Command:       D:\Program Files\nodejs\node.exe C:\Users\USUARIO\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2020-04-24T04:26:23.691Z] CLI Version:   8.1.1
+[debug] [2020-04-24T04:26:23.691Z] Platform:      win32
+[debug] [2020-04-24T04:26:23.691Z] Node Version:  v10.16.0
+[debug] [2020-04-24T04:26:23.692Z] Time:          Thu Apr 23 2020 23:26:23 GMT-0500 (GMT-05:00)
+[debug] [2020-04-24T04:26:23.692Z] ----------------------------------------------------------------------
+[debug] [2020-04-24T04:26:23.692Z] 
+[debug] [2020-04-24T04:26:23.702Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-04-24T04:26:23.727Z] Error: Could not load the default credentials. Browse to https://cloud.google.com/docs/authentication/getting-started for more information.
+    at GoogleAuth.getApplicationDefaultAsync (C:\Users\USUARIO\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\google-auth-library\build\src\auth\googleauth.js:160:19)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2020-04-24T04:28:58.446Z] ----------------------------------------------------------------------
+[debug] [2020-04-24T04:28:58.448Z] Command:       D:\Program Files\nodejs\node.exe C:\Users\USUARIO\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2020-04-24T04:28:58.449Z] CLI Version:   8.1.1
+[debug] [2020-04-24T04:28:58.449Z] Platform:      win32
+[debug] [2020-04-24T04:28:58.449Z] Node Version:  v10.16.0
+[debug] [2020-04-24T04:28:58.450Z] Time:          Thu Apr 23 2020 23:28:58 GMT-0500 (GMT-05:00)
+[debug] [2020-04-24T04:28:58.450Z] ----------------------------------------------------------------------
+[debug] [2020-04-24T04:28:58.450Z] 
+[debug] [2020-04-24T04:28:58.459Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-04-24T04:28:58.485Z] Error: Could not load the default credentials. Browse to https://cloud.google.com/docs/authentication/getting-started for more information.
+    at GoogleAuth.getApplicationDefaultAsync (C:\Users\USUARIO\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\google-auth-library\build\src\auth\googleauth.js:160:19)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+[error] 
+[error] Error: An unexpected error has occurred.
